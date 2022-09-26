@@ -1,0 +1,11 @@
+pieline {
+    
+    agent any
+    stages {
+        stage('SCM Checkout') {
+            steps {
+               git credentialsId: 'git-hub', url: 'https://github.com/Devops4674/HTMLPRO.git'
+            }
+        }
+    }
+}
